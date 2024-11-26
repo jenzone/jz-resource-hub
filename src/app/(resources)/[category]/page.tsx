@@ -5,13 +5,13 @@ import { ResourceCard } from '@/components/resource-card'
 
 import { categories, resources } from '@/data'
 
-interface IGenerateMetadata {
-  params: { category: string }
+interface IResourcePage {
+  params: Promise<{ category: string }>
 }
 
 export async function generateMetadata({
   params,
-}: IGenerateMetadata): Promise<Metadata> {
+}: IResourcePage): Promise<Metadata> {
   const { category } = await params
 
   const categoryName = categories.find((cat) => cat.slug === category)?.name
@@ -21,11 +21,7 @@ export async function generateMetadata({
   }
 }
 
-export default async function ResourcePage({
-  params,
-}: {
-  params: { category: string }
-}) {
+export default async function ResourcePage({ params }: IResourcePage) {
   resources.sort((a, b) => a.name.localeCompare(b.name))
 
   const { category } = await params

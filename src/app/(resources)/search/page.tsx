@@ -3,13 +3,13 @@ import type { Metadata } from 'next'
 import { resources } from '@/data'
 import { ResourceCard } from '@/components/resource-card'
 
-interface IGenerateMetadata {
+interface IResourceSearchPage {
   searchParams: Promise<{ q: string }>
 }
 
 export async function generateMetadata({
   searchParams,
-}: IGenerateMetadata): Promise<Metadata> {
+}: IResourceSearchPage): Promise<Metadata> {
   const { q } = await searchParams
 
   const query = q.toUpperCase()
@@ -21,11 +21,7 @@ export async function generateMetadata({
 
 export default async function ResourceSearchPage({
   searchParams,
-}: {
-  searchParams: {
-    q: string
-  }
-}) {
+}: IResourceSearchPage) {
   resources.sort((a, b) => a.name.localeCompare(b.name))
 
   const { q } = await searchParams

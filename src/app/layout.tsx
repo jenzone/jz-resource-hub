@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     icon: '/jzrh-logo-filled.svg',
     apple: '/jzrh-logo-filled.svg',
   },
+  metadataBase: new URL('https://jz-resource-hub.vercel.app'),
   openGraph: {
     title: 'JZ Resource Hub',
     description:
