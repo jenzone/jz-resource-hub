@@ -18,7 +18,7 @@ export function NavBar() {
         />
       </Link>
       <div className="flex items-center justify-center space-x-4">
-        <Link href="https://jz-resource-hub.vercel.app" target="_blank">
+        <Link href="https://github.com/jenzone/jz-resource-hub" target="_blank">
           <GithubIcon className="h-5 w-5" />
         </Link>
         <ModeToggle />
