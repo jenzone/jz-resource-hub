@@ -6,7 +6,7 @@ import { ResourceCard } from '@/components/resource-card'
 import { categories, resources } from '@/data'
 
 interface IGenerateMetadata {
-  params: Promise<{ category: string }>
+  params: { category: string }
 }
 
 export async function generateMetadata({
