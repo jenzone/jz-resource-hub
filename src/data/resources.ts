@@ -95,4 +95,44 @@ export const resources: IResources[] = [
       'Clerk is a complete suite of embeddable UIs, flexible APIs, and admin dashboards to authenticate and manage your users.',
     url: 'https://clerk.com/',
   },
+  {
+    name: 'Okso',
+    categories: ['diagramming-tool'],
+    description:
+      'The OkSo app is a minimalistic online drawing app to express, grasp, and organize your thoughts and ideas.',
+    url: 'https://okso.app/',
+  },
+  {
+    name: 'Symbl',
+    categories: ['symbol'],
+    description:
+      'Explore symbols, characters, hieroglyphs, scripts, and alphabets',
+    url: 'https://symbl.cc/',
+  },
+  {
+    name: 'Emojipedia',
+    categories: ['symbol'],
+    description: 'AI Emoji Generator StickersBeta',
+    url: 'https://emojipedia.org/',
+  },
+  {
+    name: 'Developers Roadmaps',
+    categories: ['roadmap'],
+    description:
+      'Community created roadmaps, best practices, projects, articles, resources and journeys to help you choose your path and grow in your career.',
+    url: 'https://roadmap.sh/',
+  },
+  {
+    name: 'PowerShell CheatSheet',
+    categories: ['cheatsheet'],
+    description: 'Quick reference guide to PowerShell commands and scripts.',
+    url: 'https://www.stationx.net/powershell-cheat-sheet/',
+  },
+  {
+    name: 'VisualGo.net',
+    categories: ['data-structure-and-algorithm'],
+    description:
+      'Visualising data structures and algorithms through animation.',
+    url: 'https://visualgo.net/en',
+  },
 ]

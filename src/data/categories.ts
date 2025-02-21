@@ -21,6 +21,10 @@ export const categories: ICategories[] = [
     slug: 'diagramming-tool',
   },
   {
+    name: 'Data Structure & Algorithm',
+    slug: 'data-structure-and-algorithm',
+  },
+  {
     name: 'Font',
     slug: 'font',
   },
@@ -35,5 +39,13 @@ export const categories: ICategories[] = [
   {
     name: 'Productivity Tool',
     slug: 'productivity-tool',
+  },
+  {
+    name: 'Roadmap',
+    slug: 'roadmap',
+  },
+  {
+    name: 'Symbol',
+    slug: 'symbol',
   },
 ]
